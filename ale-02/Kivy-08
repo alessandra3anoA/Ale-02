@@ -1,0 +1,11 @@
+from kivy.app import App
+from kivy.uix.button import Button
+def botao_pressionado(instance):
+      print("botao pressionado!")
+class minhaApp(App):
+      def build(self):
+            btn = Button (text='clique aqui')
+            btn.bind(on_press=botao_pressionado)
+            return btn
+if __name__ == "__main__":
+      minhaApp().run()
