@@ -1,0 +1,9 @@
+from kivy.app import App
+from kivy.uix.image import AsyncImage
+
+class MinhaApp(App):
+    def build(self):
+        return AsyncImage(source="https://akamai.sscdn.co/uploadfile/letras/albuns/0/9/8/8/29987.jpg")
+    
+if __name__=="__main__":
+    MinhaApp().run()
