@@ -1,3 +1,67 @@
+
+class Aluno:
+    def __init__(self,  matricula: int , nome: str , sexo: str , idade: int ):
+        self.matricula = matricula
+        self.nome = nome
+        self.sexo = sexo
+        self.idade = idade
+
+
+if __name__ == '__main__':
+    aluno = Aluno(matricula='00019149' ,nome='Alessandra' , sexo='F'  , idade=18)
+print(f'\nMatricula é: {aluno.matricula}. \nO nome é: {aluno.nome}. \nO sexo é {aluno.sexo}. \nA idade é : {aluno.idade} ')
+
+
+class Carro:
+   def __init__(self, placa, modelo, ano):
+      self.placa = placa
+      self.modelo = modelo
+      self.ano = ano
+class Pessoa:
+def __init__(self, nome, sexo, cpf):
+self.nome = nome
+self.sexo = sexo
+self.cpf = cpf
+
+
+def comer(self):
+return f"{self.nome} está comendo."
+
+
+def beber(self):
+return f"{self.nome} está bebendo."
+
+
+def falar(self, mensagem):
+return f"{self.nome} está falando: {mensagem}"
+
+
+def correr(self):
+return f"{self.nome} está correndo."
+
+
+if __name__ == "__main__":
+pessoa1 = Pessoa("João", "M", "123456")
+pessoa2 = Pessoa("Maria", "F", "45964")
+print(pessoa1.comer())
+print(pessoa2.beber())
+print(pessoa1.falar("Olá, como vai?"))
+print(pessoa2.correr())
+
+
+class Carro1:
+   def __init__(self, placa, modelo, ano):
+      self.placa = placa
+      self.modelo = modelo
+      self.ano = ano
+
+
+if __name__=="__main__":
+     palio = Carro("kjb-2668","edx","1997")
+     vectra = Carro("kir-0932","elite","2008")
+     duster = Carro("oyw-4108","dynamic","2015")
+print(palio.placa,vectra.placa,duster.placa)
+
 class Carro:
     def __init__(self, marca, modelo):
         self.marca = marca
