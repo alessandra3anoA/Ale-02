@@ -1,3 +1,9 @@
+from kivy.config import Config
+
+Config.set('graphics', 'width', '360')
+Config.set('graphics', 'height', '640')
+Config.set('graphics', 'resizable', False)
+
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.label import Label
