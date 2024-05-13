@@ -3,57 +3,75 @@
     orientation: 'vertical'
     TextInput:
         id: display
-        font_size: 40
+        font_size: 24
         readonly: True
+        size_hint_y: 0.2
+
     GridLayout:
         cols: 4
         spacing: 10
         padding: 10
-        Button:
+
+        BotaoRedondo:
             text: '7'
             on_press: root.atualizar_display('7')
-        Button:
+
+        BotaoRedondo:
             text: '8'
             on_press: root.atualizar_display('8')
-        Button:
+
+        BotaoRedondo:
             text: '9'
             on_press: root.atualizar_display('9')
-        Button:
+
+        BotaoRedondo:
             text: '/'
             on_press: root.atualizar_display('/')
-        Button:
+
+        BotaoRedondo:
             text: '4'
             on_press: root.atualizar_display('4')
-        Button:
+
+        BotaoRedondo:
             text: '5'
             on_press: root.atualizar_display('5')
-        Button:
+
+        BotaoRedondo:
             text: '6'
             on_press: root.atualizar_display('6')
-        Button:
+
+        BotaoRedondo:
             text: '*'
             on_press: root.atualizar_display('*')
-        Button:
+
+        BotaoRedondo:
             text: '1'
             on_press: root.atualizar_display('1')
-        Button:
+
+        BotaoRedondo:
             text: '2'
             on_press: root.atualizar_display('2')
-        Button:
+
+        BotaoRedondo:
             text: '3'
             on_press: root.atualizar_display('3')
-        Button:
+
+        BotaoRedondo:
             text: '-'
             on_press: root.atualizar_display('-')
+
         Button:
             text: 'C'
             on_press: root.limpar_display()
-        Button:
+
+        BotaoRedondo:
             text: '0'
             on_press: root.atualizar_display('0')
-        Button:
+
+        BotaoRedondo:
             text: '='
             on_press: root.calcular()
-        Button:
+
+        BotaoRedondo:
             text: '+'
             on_press: root.atualizar_display('+')
