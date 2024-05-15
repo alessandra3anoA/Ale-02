@@ -5,8 +5,9 @@ from kivy.uix.button import Button
 from kivy.config import Config
 from kivy.graphics import Color, Ellipse
 
-Config.set('graphics', 'width', '370')
-Config.set('graphics', 'height', '640')
+Config.set('graphics', 'width', '320') 
+Config.set('graphics', 'height', '510')
+Config.set('graphics', 'resizable', 0)  
 Builder.load_file('main.kv')
 
 class Calculadora(BoxLayout):
@@ -42,6 +43,7 @@ class BotaoCircular(Button):
         self.canvas.before.clear()
         self.canvas.before.add(Color(0.2, 0.2, 0.2, 1))
         self.canvas.before.add(Ellipse(pos=self.pos, size=self.size))
+
 class BotaoCustomizado(Button):
     pass
 
@@ -54,5 +56,3 @@ class AplicativoCalculadora(App):
 
 if __name__ == '__main__':
     AplicativoCalculadora().run()
-
-

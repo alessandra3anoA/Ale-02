@@ -1,31 +1,55 @@
 #:kivy 2.0.0
-<BotaoRedondo@Button>:
-    background_color: 0, 0, 0, 0
-    background_normal: ''  
-    background_down: ''
+<AplicativoCalculadora>:
     canvas.before:
         Color:
-            rgba: 0.4, 0.4, 0.4, 1  
+            rgba: 1, 1, 1, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+<BotaoRedondo@Button>:
+    background_color:  0, 0, 0, 0
+    background_normal: ''  
+    background_down: ''
+    font_size: 32
+    canvas.before:
+        Color:
+            rgba:1, 1, 1, 1
         Ellipse:
             pos: self.pos  
             size: self.size
-    font_size: 24  
+    font_size: 36 
     size_hint: None, None 
-    size: 100, 100  
+    size: 80, 60
+    border_radius: [10] 
+     
 
 <Calculadora>:
     orientation: 'vertical'
     TextInput:
         id: display
-        font_size: 24
+        font_size: 36
         readonly: True
         size_hint_y: 0.2
+        background_color: 0, 0, 0, 1
+        foreground_color: 1, 1, 1, 1
        
 
     GridLayout:
         cols: 4
         spacing: 10
-        padding: 10
+        padding: 20
+        size_hint_y: 0.3
+        background_color: 1, 1, 1, 1 
+        foreground_color: 0, 0, 0, 1   
+
+        
+        canvas.before:
+            Color:
+                rgba: 0.7, 0.7, 0.7, 1  
+            Rectangle:
+                pos: self.pos
+                size: self.width, self.height * 0.99
 
         BotaoRedondo:
             color: 0, 0, 0, 1
