@@ -31,8 +31,8 @@
         font_size: 36
         readonly: True
         size_hint_y: 0.2
-        background_color: 0, 0, 0, 1
-        foreground_color: 1, 1, 1, 1
+        background_color: 1, 1, 1, 1  
+        foreground_color: 0, 0, 0, 1
        
 
     GridLayout:
@@ -41,7 +41,14 @@
         padding: 20
         size_hint_y: 0.3
         background_color: 1, 1, 1, 1 
-        foreground_color: 0, 0, 0, 1   
+        foreground_color: 0, 0, 0, 1 
+
+        canvas.before:
+            Color:
+                rgba: 1, 1, 1, 1  
+            Rectangle:
+                pos: self.pos
+                size: self.size  
 
         
         canvas.before:
