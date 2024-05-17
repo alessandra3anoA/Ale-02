@@ -23,32 +23,18 @@ class Calculadora(BoxLayout):
         except Exception as e:
             self.ids.display.text = 'Erro'
 
-class MeuApp(BoxLayout):
-    def __init__(self, **kwargs):
-        super(MeuApp, self).__init__(**kwargs)
-        self.ids.meu_botao.text = "Novo Texto"
+    def limpar_um_caracter(self):
+        self.ids.display.text = self.ids.display.text[:-1]
+        
+    def inverter_sinal(self):
+        texto_atual = self.ids.display.text
+        if texto_atual and texto_atual[0] != '-':
+            self.ids.display.text = '-' + texto_atual
+        elif texto_atual:
+            self.ids.display.text = texto_atual[1:]
 
-class BotaoCircular(Button):
-    def __init__(self, **kwargs):
-        super().__init__(**kwargs)
-        self.size_hint = (None, None)
-        self.size = (100, 100)
-        self.background_color = (0.4, 0.4, 0.4, 1)
-        self.background_normal = ''
-        self.background_down = ''
-        self.canvas.before.add(Color(0.2, 0.2, 0.2, 1))
-        self.canvas.before.add(Ellipse(pos=self.pos, size=self.size))
-
-    def on_size(self, *args):
-        self.canvas.before.clear()
-        self.canvas.before.add(Color(0.2, 0.2, 0.2, 1))
-        self.canvas.before.add(Ellipse(pos=self.pos, size=self.size))
-
-class BotaoCustomizado(Button):
-    pass
-
-class MeuBotao(Button):
-    pass
+    def on_textinput(self, text):
+        self.atualizar_display(text)
 
 class AplicativoCalculadora(App):
     def build(self):
