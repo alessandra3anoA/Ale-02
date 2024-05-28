@@ -67,11 +67,11 @@ class Calculadora(BoxLayout):
             return True  # Indica que o evento foi tratado
 
 
-class AplicativoCalculadora(App):
+class Magnus_Calculadora(App):
     def build(self):
         calculadora = Calculadora()
         Window.size = (320, 510)  # Definindo o tamanho da janela
         Window.bind(on_key_down=calculadora.on_key_down)
         return calculadora
 if __name__ == '__main__':
-    AplicativoCalculadora().run()
+    Magnus_Calculadora().run()
