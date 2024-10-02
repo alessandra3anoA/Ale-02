@@ -7,8 +7,8 @@
     
     .container {width: 100%; float: left; padding: 3% 4%; text-align: center;}
     
-    .bg-gradient {background: linear-gradient(to right,#300384,#241d41);}
-    .bg-black {background-color: #060c328d; }
+    .bg-gradient {background: linear-gradient(to right,#0e2d7b51,#110ca779);}
+    .bg-black {background-color: #363a3c8e; }
     .bg-white {background-color: #d8dbe2d2;}
     
     .radius {border-radius: 7px;}
@@ -59,8 +59,8 @@
     /* BANNER */
     .banner {background: url(Img/MCmagem_site.jpg) no-repeat fixed;}
     .title {width: 100%;}
-    .title h2 {font-size: 2.5em; color: #0b0b0b; font-weight: 700;}
-    .title h3 {font-size: 1.5em; color: #1b1717;}
+    .title h2 {font-size: 2.5em; color: #2e164db7; font-weight: 700;}
+    .title h3 {font-size: 1.5em; color: #391062b7;}
     .buttons {width: 100%; margin-top: 2%;}
     .buttons i {float: right;}
     .btn {width: 100%; font-size: 1.5em; text-align: left; cursor: pointer; padding: 5%; }
