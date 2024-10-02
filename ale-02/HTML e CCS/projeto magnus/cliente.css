@@ -7,7 +7,7 @@
     
     .container {width: 100%; float: left; padding: 3% 4%; text-align: center;}
     
-    .bg-gradient {background: linear-gradient(to right,#300384,#241d41);}
+    .bg-gradient {background: linear-gradient(to right,#0e2d7b51,#110ca779);}
     .bg-black {background-color: #060c328d; }
     .bg-white {background-color: #d8dbe2d2;}
     
@@ -62,12 +62,14 @@
         background-size: cover; /* Isso garante que a imagem cubra todo o banner */
         padding: 50px 20px; /* Ajuste o padding conforme necessário */
         text-align: center; /* Centraliza o texto no banner */
-        color: white; /* Ajusta a cor do texto, se necessário */
+        color: #2e164db7; /* Ajusta a cor do texto, se necessário */
     }
     
     .title h2, .title h3 {
         margin: 0;
     }
+
+    
     /* SERVIÇOS */
     .servico {width: 100%;  text-align: left;  margin-bottom: 3%;}
     .servico img {border-radius: 7px 7px 0 0;}
